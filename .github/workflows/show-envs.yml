@@ -1,0 +1,13 @@
+name: Show envs
+on: push
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "${GITHUB_ACTIONS}"
+          echo "${GITHUB_SERVER_URL}"
+          echo "${GITHUB_REPOSITORY}"
+          echo "${GITHUB_SHA}"
+          echo "${GITHUB_WORKSPACE}"
+
